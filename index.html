@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIR C R REDDY COLLEGE - Examination Results</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 3px solid #0056b3;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .header-container {
+      max-width: 1800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    .college-logo,
+    .naac-logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .college-info {
+      text-align: left;
+      padding: 0;
+    }
+
+    .college-info h1 {
+      margin: 0;
+      font-size: 37px;
+      color: #b33200;
+    }
+
+    .college-info p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .highlight {
+      color: #006400;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .iso {
+      color: #0056b3;
+      text-align: center;
+    }
+
+    .address {
+      color: #cc6600;
+      text-align: center;
+    }
+
+    .main {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .main h2 {
+      color: #0033cc;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    input[type="text"] {
+      width: 54%;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      flex: 1;
+      padding: 12px;
+      margin: 0 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-go {
+      background-color: #007bff;
+    }
+
+    .btn-home {
+      background-color: #28a745;
+    }
+
+    .btn-print {
+      background-color: #dd0808;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background-color: #0056b3;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 200px;
+      font-size: 14px;
+    }
+
+    .footer-container p {
+      margin: 5px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .college-info {
+        text-align: center;
+      }
+
+      .college-info h1 {
+        font-size: 24px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      button {
+        margin: 5px 0;
+      }
+
+      footer {
+        font-size: 13px;
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="./crr logo.jpeg" alt="College Logo" class="college-logo"/>
+
+      <div class="college-info">
+        <h1>SIR C R REDDY AUTONOMOUS COLLEGE</h1>
+        <p class="highlight">(Aided, Autonomous, CPE and NAAC "A" graded)</p>
+        <p class="iso">An ISO 9001:2015 Certified Institution</p>
+        <p class="address">NR Pet, Near New Bus Stand, Eluru Dt., Eluru, AP – 534007</p>
+      </div>
+
+      <img src="./nacc.jpeg" alt="NAAC Logo" class="naac-logo"/>
+    </div>
+  </header>
+
+  <div class="main">
+    <h2>EXAMINATION RESULTS</h2>
+    <h2>MCA SEMESTER-2</h2>
+
+    <div class="form-container">
+      <form action="video.html" method="get">
+        <label for="regno">Registration Number:</label>
+        <input type="text" id="regno" name="regno" placeholder="Enter your registration number" required />
+
+        <div class="buttons">
+          <button class="btn-go" type="submit">Result</button>
+          <button class="btn-home" type="submit" onclick="window.location.href='index.html'">Home</button>
+          <button class="btn-print" type="submit" onclick="window.location.href='index.html'">Print</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 SIR C R REDDY AUTONOMOUS COLLEGE, Eluru. All Rights Reserved.</p>
+      <p>Developed & Maintained by <strong>College IT Cell</strong></p>
+    </div>
+  </footer>
+
+</body>
+</html>
